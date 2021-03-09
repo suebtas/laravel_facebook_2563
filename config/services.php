@@ -29,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'facebook' => [
+        'client_id' => env('Facebook_API_ID'),
+        'client_secret' => env('Facebook_secret'),
+        'redirect' => 'https://laravelexam25640055w.azurewebsites.net/auth/facebook/callback', 
+    ],
 
 ];
