@@ -26,5 +26,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/', function () {return view('product');});
+Route::get('/product', function () {return view('product');});
 Route::get('/payment/make', [PaymentsController::class,'make'])->name('payment.make');
